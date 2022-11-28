@@ -1,0 +1,81 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  touch-action: none;
+}
+
+body {
+  font-family: 'Courier New';
+  color: #ffffff;
+  user-select: none;
+}
+
+#score {
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+#desktopControls {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+
+#instructions {
+  position: fixed;
+  top: 5%;
+  left: 1%
+}
+
+#version {
+  position: fixed;
+  top: 95%;
+  left: 90%;
+}
+
+#mobileControls {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #version {
+    display: none;
+  }
+
+  #instructions {
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    font-size: 8px;
+    transform: translate(-50%, -50%);
+  }
+
+  #desktopControls {
+    display: none;
+  }
+
+  #mobileControls {
+    display: block;
+    font-size: 64px;
+    user-select: none;
+  }
+
+  #left {
+    position: fixed;
+    top: 85%;
+    left: 0%;
+    transform: translate(50%, 0);
+  }
+
+  #right {
+    position: fixed;
+    top: 85%;
+    left: 100%;
+    transform: translate(-150%, 0);
+  }
+}
